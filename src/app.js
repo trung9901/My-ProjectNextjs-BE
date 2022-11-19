@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 import "dotenv/config";
 import sizeRoutes from "./routes/size";
 import productRoutes from "./routes/products";
-import colorRoutes from "./routes/color";
+import colorRoutes from "./routes/colors";
 import categoryRoutes from "./routes/categories";
 const app = express();
 
