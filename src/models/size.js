@@ -6,6 +6,12 @@ const SizeSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
+    quantity: {
+      type: Number,
+      minLength: 0,
+      required: true,
+      dèfault: 0,
+    },
   },
   { timestamps: true }
 );

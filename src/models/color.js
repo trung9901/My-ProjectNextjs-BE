@@ -10,6 +10,12 @@ const ColorSchema = new mongoose.Schema(
         type: String,
       },
     ],
+    size: [
+      {
+        type: mongoose.Types.ObjectId,
+        ref: "Size",
+      },
+    ],
   },
   { timestamps: true }
 );

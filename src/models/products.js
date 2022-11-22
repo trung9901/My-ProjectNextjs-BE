@@ -13,7 +13,11 @@ const ProductSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
-
+    productCode: {
+      type: String,
+      required: true,
+      trim: true,
+    },
     slug: {
       type: String,
       lowercase: true,
@@ -28,7 +32,7 @@ const ProductSchema = new mongoose.Schema(
     },
     quantity: {
       type: Number,
-      required: true,
+      // required: true,
     },
 
     color: [
@@ -39,12 +43,12 @@ const ProductSchema = new mongoose.Schema(
     ],
 
     ratings: [{}],
-    size: [
-      {
-        type: mongoose.Types.ObjectId,
-        ref: "Size",
-      },
-    ],
+    // size: [
+    //   {
+    //     type: mongoose.Types.ObjectId,
+    //     ref: "Size",
+    //   },
+    // ],
     category: {
       type: mongoose.Types.ObjectId,
       ref: "Category",
