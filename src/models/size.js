@@ -10,7 +10,7 @@ const SizeSchema = new mongoose.Schema(
       type: Number,
       minLength: 0,
       required: true,
-      dèfault: 0,
+      default: 0,
     },
   },
   { timestamps: true }
