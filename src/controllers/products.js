@@ -43,6 +43,7 @@ export const remove = async (req, res) => {
   }
 };
 export const update = async (req, res) => {
+  req.body.slug = slugify(req.body.name);
   try {
     const product = await Product.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
